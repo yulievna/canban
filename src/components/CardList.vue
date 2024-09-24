@@ -2,7 +2,7 @@
   
   <div>
     <v-select return-object v-model="selected" label="Сортировка" :items="variants" variant="solo"
-      v-on:change="sortByRating">
+      @click="sortByRating">
     </v-select>
     
     <section :style="`background: ${options.color}`" @drop="onDrop($event, options.id)" @dragover.prevent
